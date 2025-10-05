@@ -203,3 +203,73 @@
 2025-10-05 13:38:22,895 - utils - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
 2025-10-05 13:38:22,895 - __main__ - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
 2025-10-05 13:38:22,895 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:38:22] "GET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -
+2025-10-05 14:14:49,733 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 14:14:49,733 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 14:14:54,394 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:14:54] "GET / HTTP/1.1" 200 -
+2025-10-05 14:14:54,596 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:14:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-10-05 14:14:54,602 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:14:54] "GET /static/js/app.js HTTP/1.1" 200 -
+2025-10-05 14:14:55,552 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 14:14:55,552 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:14:55] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 14:15:44,125 - utils - INFO - Created wallet in DB: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:47,869 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 14:15:47,870 - __main__ - INFO - Generated new wallet: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:47,871 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:15:47] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 14:15:55,440 - utils - INFO - Retrieved wallet: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:55,440 - __main__ - INFO - Retrieved wallet info: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:55,441 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:15:55] "GET /api/wallet/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:15:55,743 - utils - INFO - Retrieved 0 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:55,744 - __main__ - INFO - Retrieved 0 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:15:55,745 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:15:55] "GET /api/transactions/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:16:05,968 - utils - INFO - Retrieved 0 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:16:05,969 - __main__ - INFO - Retrieved 0 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:16:05,971 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:16:05] "GET /api/transactions/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:16:51,778 - utils - INFO - Retrieved wallet: 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718
+2025-10-05 14:16:51,783 - __main__ - INFO - Prepared transfer: 5e040089550be8ec from 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718 to 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 14:16:51,784 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:16:51] "POST /api/transfer/prepare HTTP/1.1" 200 -
+2025-10-05 14:16:53,935 - __main__ - INFO - Message signed successfully
+2025-10-05 14:16:53,936 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:16:53] "POST /api/sign HTTP/1.1" 200 -
+2025-10-05 14:16:54,243 - utils - INFO - Retrieved wallet: 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718
+2025-10-05 14:16:54,532 - utils - INFO - Retrieved wallet: 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 14:16:54,821 - utils - INFO - Updated balance for 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718
+2025-10-05 14:16:55,133 - utils - INFO - Updated balance for 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 14:16:55,426 - utils - INFO - Saved transaction from 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718 to 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 14:16:58,697 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 14:17:02,930 - __main__ - INFO - Email sent to harryragav008@gmail.com
+2025-10-05 14:17:02,931 - __main__ - WARNING - Telegram not configured, skipping notification
+2025-10-05 14:17:02,931 - __main__ - INFO - Executed transfer: 5e040089550be8ec from 0xef76ec846c3e7622a3f15cbf3bd698f0762d8718 to 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 14:17:02,932 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:17:02] "POST /api/transfer/execute HTTP/1.1" 200 -
+2025-10-05 14:17:03,258 - utils - INFO - Retrieved wallet: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:03,259 - __main__ - INFO - Retrieved wallet info: 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:03,260 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:17:03] "GET /api/wallet/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:17:03,560 - utils - INFO - Retrieved 1 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:03,562 - __main__ - INFO - Retrieved 1 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:03,562 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:17:03] "GET /api/transactions/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:17:08,599 - utils - INFO - Retrieved 1 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:08,601 - __main__ - INFO - Retrieved 1 transactions for 0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718
+2025-10-05 14:17:08,602 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:17:08] "GET /api/transactions/0xEf76Ec846C3E7622A3F15cbf3bD698f0762D8718 HTTP/1.1" 200 -
+2025-10-05 14:37:09,232 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 14:37:09,233 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 14:37:14,321 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:14] "GET / HTTP/1.1" 200 -
+2025-10-05 14:37:14,460 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 14:37:14,480 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 14:37:15,381 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 14:37:15,381 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:15] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 14:37:18,071 - utils - INFO - Created wallet in DB: 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:20,241 - __main__ - ERROR - Failed to send email notification to : {}
+2025-10-05 14:37:20,242 - __main__ - INFO - Generated new wallet: 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:20,242 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:20] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 14:37:22,823 - utils - INFO - Retrieved wallet: 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:22,823 - __main__ - INFO - Retrieved wallet info: 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:22,823 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:22] "GET /api/wallet/0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B HTTP/1.1" 200 -
+2025-10-05 14:37:23,371 - utils - INFO - Retrieved 0 transactions for 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:23,371 - __main__ - INFO - Retrieved 0 transactions for 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:23,374 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:23] "GET /api/transactions/0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B HTTP/1.1" 200 -
+2025-10-05 14:37:51,532 - utils - INFO - Retrieved 0 transactions for 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:51,532 - __main__ - INFO - Retrieved 0 transactions for 0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B
+2025-10-05 14:37:51,532 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 14:37:51] "GET /api/transactions/0x98A2DAa61F099fF242B33C59f3a9658AeA87A08B HTTP/1.1" 200 -
