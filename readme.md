@@ -1,7 +1,22 @@
 ## 🎬 Demo Video
 [Watch the demo video here](https://drive.google.com/file/d/1sZuJIxb5Sd25J3N_bKD2Vy2k7Fuhq--j/view?usp=drive_link)
 
+## 📸 Demo Screenshots
 
+### 1️⃣ Home Page
+![Home Page](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/Homepage.jpg)
+
+### 2️⃣ Wallet Dashboard
+![Wallet Dashboard](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/dashboard.png).
+### 3️⃣ Transaction History
+![Transaction History](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/transaction_history.png)
+
+###  Import Wallet
+![Import Wallet](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/import_wallet.png).
+###  New wallet
+![New wallet](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/new_wallet.png).
+###  Send ETH
+![Send ETH](https://github.com/harish-123445/cypher_hackathon/blob/main/screenshots/send_eth.png).
 
 
 # Mock Web3 Wallet API
