@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Web3 Wallet - Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-wallet"></i>
+                <h1>Mock Web3 Wallet</h1>
+            </div>
+            <div class="wallet-status" id="walletStatus">
+                <span class="status-indicator"></span>
+                <span>Not Connected</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Welcome Screen -->
+            <div id="welcomeScreen" class="screen active">
+                <div class="welcome-card">
+                    <h2>Welcome to Your Web3 Wallet</h2>
+                    <p>Create a new wallet or import an existing one to get started</p>
+                    <div class="button-group">
+                        <button class="btn btn-primary" onclick="showScreen('createScreen')">
+                            <i class="fas fa-plus-circle"></i> Create Wallet
+                        </button>
+                        <button class="btn btn-secondary" onclick="showScreen('importScreen')">
+                            <i class="fas fa-file-import"></i> Import Wallet
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Create Wallet Screen -->
+            <div id="createScreen" class="screen">
+                <div class="form-card">
+                    <h2><i class="fas fa-plus-circle"></i> Create New Wallet</h2>
+                    <form id="createForm">
+                        <div class="form-group">
+                            <label for="createEmail">Notification Email (Optional)</label>
+                            <input type="email" id="createEmail" placeholder="your@email.com">
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary">Generate Wallet</button>
+                            <button type="button" class="btn btn-secondary" onclick="showScreen('welcomeScreen')">Cancel</button>
+                        </div>
+                    </form>
+                    <div id="mnemonicDisplay" class="mnemonic-display" style="display: none;">
+                        <h3>⚠️ Save Your Mnemonic Phrase</h3>
+                        <p class="warning-text">Write down these 12 words in order. You'll need them to recover your wallet!</p>
+                        <div class="mnemonic-grid" id="mnemonicGrid"></div>
+                        <button class="btn btn-primary" onclick="confirmMnemonic()">I've Saved It Securely</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Import Wallet Screen -->
+            <div id="importScreen" class="screen">
+                <div class="form-card">
+                    <h2><i class="fas fa-file-import"></i> Import Wallet</h2>
+                    <form id="importForm">
+                        <div class="form-group">
+                            <label for="importMnemonic">12-Word Mnemonic Phrase</label>
+                            <textarea id="importMnemonic" rows="3" placeholder="Enter your 12-word mnemonic phrase"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="accountIndex">Account Index</label>
+                            <input type="number" id="accountIndex" value="0" min="0" max="20">
+                        </div>
+                        <div class="form-group">
+                            <label for="importEmail">Notification Email (Optional)</label>
+                            <input type="email" id="importEmail" placeholder="your@email.com">
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary">Import Wallet</button>
+                            <button type="button" class="btn btn-secondary" onclick="showScreen('welcomeScreen')">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Dashboard Screen -->
+            <div id="dashboardScreen" class="screen">
+                <div class="dashboard-grid">
+                    <!-- Wallet Info Card -->
+                    <div class="card wallet-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-wallet"></i> Wallet Overview</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="balance-display">
+                                <span class="balance-label">Total Balance</span>
+                                <span class="balance-amount" id="balanceAmount">0.0000</span>
+                                <span class="balance-currency">ETH</span>
+                            </div>
+                            <div class="address-display">
+                                <label>Address</label>
+                                <div class="address-copy">
+                                    <span id="walletAddress">0x...</span>
+                                    <button class="btn-icon" onclick="copyAddress()" title="Copy Address">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions Card -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                        </div>
+                        <div class="card-body">
+                            <button class="btn btn-primary btn-block" onclick="showScreen('sendScreen')">
+                                <i class="fas fa-paper-plane"></i> Send ETH
+                            </button>
+                            <button class="btn btn-secondary btn-block" onclick="loadTransactions()">
+                                <i class="fas fa-history"></i> View Transactions
+                            </button>
+                            <button class="btn btn-danger btn-block" onclick="disconnectWallet()">
+                                <i class="fas fa-sign-out-alt"></i> Disconnect
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Transaction Chart Card -->
+                    <div class="card chart-card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-chart-line"></i> Transaction Overview</h3>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="transactionChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Send ETH Screen -->
+            <div id="sendScreen" class="screen">
+                <div class="form-card">
+                    <h2><i class="fas fa-paper-plane"></i> Send ETH</h2>
+                    <div class="balance-info">
+                        <span>Your Balance: </span>
+                        <strong id="sendBalanceDisplay">0.0000 ETH</strong>
+                    </div>
+                    <form id="sendForm">
+                        <div class="form-group">
+                            <label for="recipientAddress">Recipient Address</label>
+                            <input type="text" id="recipientAddress" placeholder="0x..." required>
+                        </div>
+                        <div class="form-group">
+                            <label>Amount Type</label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="amountMode" value="ETH" checked>
+                                    <span>ETH</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="amountMode" value="USD">
+                                    <span>USD</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="amount">Amount</label>
+                            <input type="text" id="amount" placeholder="0.0" required>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary">Prepare Transfer</button>
+                            <button type="button" class="btn btn-secondary" onclick="showScreen('dashboardScreen')">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Approval Modal -->
+                <div id="approvalModal" class="modal">
+                    <div class="modal-content">
+                        <h3><i class="fas fa-check-circle"></i> Approve Transaction</h3>
+                        <div class="approval-details">
+                            <p id="approvalMessage"></p>
+                            <div class="approval-info">
+                                <span>Amount:</span>
+                                <strong id="approvalAmount"></strong>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button class="btn btn-primary" onclick="approveTransaction()">
+                                <i class="fas fa-signature"></i> Sign & Send
+                            </button>
+                            <button class="btn btn-secondary" onclick="closeApprovalModal()">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transaction History Screen -->
+            <div id="historyScreen" class="screen">
+                <div class="card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-history"></i> Transaction History</h3>
+                        <button class="btn btn-secondary btn-sm" onclick="showScreen('dashboardScreen')">
+                            <i class="fas fa-arrow-left"></i> Back
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div id="transactionList" class="transaction-list"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay">
+        <div class="spinner"></div>
+        <p>Processing...</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

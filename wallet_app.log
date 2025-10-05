@@ -1,0 +1,205 @@
+2025-10-05 12:53:39,350 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 12:53:39,350 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 12:53:43,216 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:53:43] "GET / HTTP/1.1" 200 -
+2025-10-05 12:53:43,377 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:53:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 12:53:43,388 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:53:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 12:53:44,410 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 12:53:44,411 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:53:44] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 12:54:44,284 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 12:54:44,284 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 12:54:47,220 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:54:47] "GET / HTTP/1.1" 200 -
+2025-10-05 12:54:47,362 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:54:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 12:54:47,367 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:54:47] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 12:54:48,177 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 12:54:48,177 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:54:48] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 12:54:59,336 - firebase_helper - INFO - Created wallet in DB: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 12:54:59,336 - __main__ - INFO - Generated new wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 12:54:59,336 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:54:59] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 12:55:07,842 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 12:55:07,842 - __main__ - INFO - Retrieved wallet info: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 12:55:07,842 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:55:07] "GET /api/wallet/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1" 200 -
+2025-10-05 12:55:08,151 - firebase_helper - ERROR - Error listing transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:55:08,151 - __main__ - ERROR - Error retrieving transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:55:08,151 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:55:08] "[35m[1mGET /api/transactions/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1[0m" 500 -
+2025-10-05 12:56:52,141 - __main__ - WARNING - Wallet not found: null
+2025-10-05 12:56:52,141 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:56:52] "[33mGET /api/wallet/null HTTP/1.1[0m" 404 -
+2025-10-05 12:56:59,438 - __main__ - WARNING - Wallet not found: null
+2025-10-05 12:56:59,438 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:56:59] "[33mGET /api/wallet/null HTTP/1.1[0m" 404 -
+2025-10-05 12:57:05,547 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:05] "GET / HTTP/1.1" 200 -
+2025-10-05 12:57:05,606 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 12:57:05,620 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 12:57:05,923 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 12:57:05,924 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:05] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 12:57:19,832 - firebase_helper - INFO - Created wallet in DB: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:57:19,832 - __main__ - INFO - Generated new wallet: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:57:19,832 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:19] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 12:57:35,726 - firebase_helper - INFO - Retrieved wallet: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:57:35,726 - __main__ - INFO - Retrieved wallet info: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:57:35,726 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:35] "GET /api/wallet/0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D HTTP/1.1" 200 -
+2025-10-05 12:57:36,026 - firebase_helper - ERROR - Error listing transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:57:36,026 - __main__ - ERROR - Error retrieving transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:57:36,026 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:57:36] "[35m[1mGET /api/transactions/0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D HTTP/1.1[0m" 500 -
+2025-10-05 12:58:24,326 - firebase_helper - ERROR - Error listing transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:58:24,326 - __main__ - ERROR - Error retrieving transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:58:24,326 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:24] "[35m[1mGET /api/transactions/0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D HTTP/1.1[0m" 500 -
+2025-10-05 12:58:35,455 - firebase_helper - INFO - Retrieved wallet: 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 12:58:35,463 - __main__ - INFO - Prepared transfer: 239051f9a086252e from 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d to 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 12:58:35,463 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:35] "POST /api/transfer/prepare HTTP/1.1" 200 -
+2025-10-05 12:58:38,693 - __main__ - INFO - Message signed successfully
+2025-10-05 12:58:38,693 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:38] "POST /api/sign HTTP/1.1" 200 -
+2025-10-05 12:58:38,989 - firebase_helper - INFO - Retrieved wallet: 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 12:58:39,291 - firebase_helper - INFO - Retrieved wallet: 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 12:58:39,578 - firebase_helper - INFO - Updated balance for 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 12:58:39,906 - firebase_helper - INFO - Updated balance for 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 12:58:40,205 - firebase_helper - INFO - Saved transaction from 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d to 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 12:58:44,489 - __main__ - INFO - Email sent to harryragav008@gmail.com
+2025-10-05 12:58:47,627 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 12:58:47,627 - __main__ - WARNING - Telegram not configured, skipping notification
+2025-10-05 12:58:47,627 - __main__ - INFO - Executed transfer: 239051f9a086252e from 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d to 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 12:58:47,627 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:47] "POST /api/transfer/execute HTTP/1.1" 200 -
+2025-10-05 12:58:47,917 - firebase_helper - INFO - Retrieved wallet: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:58:47,927 - __main__ - INFO - Retrieved wallet info: 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D
+2025-10-05 12:58:47,927 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:47] "GET /api/wallet/0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D HTTP/1.1" 200 -
+2025-10-05 12:58:48,235 - firebase_helper - ERROR - Error listing transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:58:48,235 - __main__ - ERROR - Error retrieving transactions for 0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 12:58:48,235 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 12:58:48] "[35m[1mGET /api/transactions/0xCbF3D0E5cbd3ee2397Eaa64A92D2725FC64BF01D HTTP/1.1[0m" 500 -
+2025-10-05 13:00:52,133 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:00:52,133 - __main__ - INFO - Imported existing wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:00:52,133 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:00:52] "POST /api/wallet/import HTTP/1.1" 200 -
+2025-10-05 13:00:52,436 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:00:52,436 - __main__ - INFO - Retrieved wallet info: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:00:52,436 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:00:52] "GET /api/wallet/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1" 200 -
+2025-10-05 13:00:52,750 - firebase_helper - ERROR - Error listing transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:00:52,750 - __main__ - ERROR - Error retrieving transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:00:52,750 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:00:52] "[35m[1mGET /api/transactions/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1[0m" 500 -
+2025-10-05 13:01:00,109 - firebase_helper - ERROR - Error listing transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:01:00,109 - __main__ - ERROR - Error retrieving transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:01:00,109 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:01:00] "[35m[1mGET /api/transactions/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1[0m" 500 -
+2025-10-05 13:06:28,768 - firebase_helper - INFO - Retrieved wallet: 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 13:06:28,776 - __main__ - INFO - Prepared transfer: 62286ec4dde2d16e from 0x8efd2391f7888d1870e2308ced27f17f572715ce to 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 13:06:28,776 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:06:28] "POST /api/transfer/prepare HTTP/1.1" 200 -
+2025-10-05 13:06:30,370 - __main__ - INFO - Message signed successfully
+2025-10-05 13:06:30,371 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:06:30] "POST /api/sign HTTP/1.1" 200 -
+2025-10-05 13:06:30,677 - firebase_helper - INFO - Retrieved wallet: 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 13:06:30,949 - firebase_helper - INFO - Retrieved wallet: 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 13:06:31,249 - firebase_helper - INFO - Updated balance for 0x8efd2391f7888d1870e2308ced27f17f572715ce
+2025-10-05 13:06:31,548 - firebase_helper - INFO - Updated balance for 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 13:06:31,837 - firebase_helper - INFO - Saved transaction from 0x8efd2391f7888d1870e2308ced27f17f572715ce to 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 13:06:35,145 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 13:06:38,366 - __main__ - INFO - Email sent to harryragav008@gmail.com
+2025-10-05 13:06:38,366 - __main__ - WARNING - Telegram not configured, skipping notification
+2025-10-05 13:06:38,366 - __main__ - INFO - Executed transfer: 62286ec4dde2d16e from 0x8efd2391f7888d1870e2308ced27f17f572715ce to 0xcbf3d0e5cbd3ee2397eaa64a92d2725fc64bf01d
+2025-10-05 13:06:38,366 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:06:38] "POST /api/transfer/execute HTTP/1.1" 200 -
+2025-10-05 13:06:38,676 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:06:38,676 - __main__ - INFO - Retrieved wallet info: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:06:38,676 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:06:38] "GET /api/wallet/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1" 200 -
+2025-10-05 13:06:38,977 - firebase_helper - ERROR - Error listing transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:06:38,977 - __main__ - ERROR - Error retrieving transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:06:38,977 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:06:38] "[35m[1mGET /api/transactions/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1[0m" 500 -
+2025-10-05 13:09:35,221 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:09:35,228 - __main__ - INFO - Imported existing wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:09:35,231 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:09:35] "POST /api/wallet/import HTTP/1.1" 200 -
+2025-10-05 13:09:35,526 - firebase_helper - INFO - Retrieved wallet: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:09:35,526 - __main__ - INFO - Retrieved wallet info: 0x8efD2391f7888d1870e2308CeD27f17F572715ce
+2025-10-05 13:09:35,528 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:09:35] "GET /api/wallet/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1" 200 -
+2025-10-05 13:09:35,828 - firebase_helper - ERROR - Error listing transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:09:35,828 - __main__ - ERROR - Error retrieving transactions for 0x8efD2391f7888d1870e2308CeD27f17F572715ce: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/mock_transactions", to the rules
+2025-10-05 13:09:35,829 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:09:35] "[35m[1mGET /api/transactions/0x8efD2391f7888d1870e2308CeD27f17F572715ce HTTP/1.1[0m" 500 -
+2025-10-05 13:27:38,076 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 13:27:38,076 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 13:27:43,109 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:27:43] "GET / HTTP/1.1" 200 -
+2025-10-05 13:27:43,260 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:27:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 13:27:43,266 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:27:43] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 13:27:44,174 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 13:27:44,174 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:27:44] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 13:30:34,794 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 13:30:34,794 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 13:30:37,598 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:30:37] "GET / HTTP/1.1" 200 -
+2025-10-05 13:30:37,805 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:30:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 13:30:37,820 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:30:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 13:30:38,910 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 13:30:38,910 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:30:38] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 13:30:53,100 - utils - INFO - Created wallet in DB: 0x831D62A826d978070f4817e4eEFAc6EA3243c06a
+2025-10-05 13:30:57,445 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 13:30:57,445 - __main__ - INFO - Generated new wallet: 0x831D62A826d978070f4817e4eEFAc6EA3243c06a
+2025-10-05 13:30:57,445 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:30:57] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 13:31:16,679 - utils - INFO - Retrieved wallet: 0x831D62A826d978070f4817e4eEFAc6EA3243c06a
+2025-10-05 13:31:16,679 - __main__ - INFO - Retrieved wallet info: 0x831D62A826d978070f4817e4eEFAc6EA3243c06a
+2025-10-05 13:31:16,681 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:31:16] "GET /api/wallet/0x831D62A826d978070f4817e4eEFAc6EA3243c06a HTTP/1.1" 200 -
+2025-10-05 13:31:17,016 - utils - ERROR - Error listing transactions for 0x831D62A826d978070f4817e4eEFAc6EA3243c06a: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:31:17,016 - __main__ - ERROR - Error retrieving transactions for 0x831D62A826d978070f4817e4eEFAc6EA3243c06a: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:31:17,020 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:31:17] "[35m[1mGET /api/transactions/0x831D62A826d978070f4817e4eEFAc6EA3243c06a HTTP/1.1[0m" 500 -
+2025-10-05 13:31:57,005 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:31:56] "[31m[1mGET /api/wallet/null HTTP/1.1[0m" 400 -
+2025-10-05 13:32:03,406 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:03] "GET / HTTP/1.1" 200 -
+2025-10-05 13:32:03,472 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 13:32:03,482 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 13:32:03,822 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 13:32:03,824 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:03] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 13:32:13,880 - utils - INFO - Created wallet in DB: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:32:17,934 - __main__ - INFO - Email sent to harryragav008@gmail.com
+2025-10-05 13:32:17,934 - __main__ - INFO - Generated new wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:32:17,934 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:17] "POST /api/wallet/generate HTTP/1.1" 200 -
+2025-10-05 13:32:27,661 - utils - INFO - Retrieved wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:32:27,661 - __main__ - INFO - Retrieved wallet info: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:32:27,666 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:27] "GET /api/wallet/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -
+2025-10-05 13:32:28,072 - utils - ERROR - Error listing transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:32:28,072 - __main__ - ERROR - Error retrieving transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:32:28,072 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:28] "[35m[1mGET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1[0m" 500 -
+2025-10-05 13:32:57,477 - utils - INFO - Retrieved wallet: 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 13:32:57,478 - __main__ - INFO - Prepared transfer: 8da743d6a24237c5 from 0xdfaa3443a966c734034e14bf2d3ef0e549b469df to 0x831d62a826d978070f4817e4eefac6ea3243c06a
+2025-10-05 13:32:57,478 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:57] "POST /api/transfer/prepare HTTP/1.1" 200 -
+2025-10-05 13:32:58,972 - __main__ - INFO - Message signed successfully
+2025-10-05 13:32:58,976 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:32:58] "POST /api/sign HTTP/1.1" 200 -
+2025-10-05 13:32:59,509 - utils - INFO - Retrieved wallet: 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 13:32:59,919 - utils - INFO - Retrieved wallet: 0x831d62a826d978070f4817e4eefac6ea3243c06a
+2025-10-05 13:33:00,227 - utils - INFO - Updated balance for 0xdfaa3443a966c734034e14bf2d3ef0e549b469df
+2025-10-05 13:33:00,530 - utils - INFO - Updated balance for 0x831d62a826d978070f4817e4eefac6ea3243c06a
+2025-10-05 13:33:00,841 - utils - INFO - Saved transaction from 0xdfaa3443a966c734034e14bf2d3ef0e549b469df to 0x831d62a826d978070f4817e4eefac6ea3243c06a
+2025-10-05 13:33:04,117 - __main__ - INFO - Email sent to harryragav008@gmail.com
+2025-10-05 13:33:08,167 - __main__ - INFO - Email sent to harish2004hari@gmail.com
+2025-10-05 13:33:08,169 - __main__ - WARNING - Telegram not configured, skipping notification
+2025-10-05 13:33:08,169 - __main__ - INFO - Executed transfer: 8da743d6a24237c5 from 0xdfaa3443a966c734034e14bf2d3ef0e549b469df to 0x831d62a826d978070f4817e4eefac6ea3243c06a
+2025-10-05 13:33:08,169 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:33:08] "POST /api/transfer/execute HTTP/1.1" 200 -
+2025-10-05 13:33:08,469 - utils - INFO - Retrieved wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:33:08,469 - __main__ - INFO - Retrieved wallet info: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:33:08,469 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:33:08] "GET /api/wallet/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -
+2025-10-05 13:33:08,824 - utils - ERROR - Error listing transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:33:08,824 - __main__ - ERROR - Error retrieving transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:33:08,826 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:33:08] "[35m[1mGET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1[0m" 500 -
+2025-10-05 13:33:16,712 - utils - ERROR - Error listing transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:33:16,714 - __main__ - ERROR - Error retrieving transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF: Index not defined, add ".indexOn": "timestamp/_seconds", for path "/transactions", to the rules
+2025-10-05 13:33:16,714 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:33:16] "[35m[1mGET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1[0m" 500 -
+2025-10-05 13:37:14,674 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-10-05 13:37:14,674 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-10-05 13:37:27,663 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:37:27] "GET / HTTP/1.1" 200 -
+2025-10-05 13:37:27,847 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:37:27] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-10-05 13:37:27,853 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:37:27] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-10-05 13:37:28,924 - __main__ - WARNING - Wallet not found: 0x0000000000000000000000000000000000000000
+2025-10-05 13:37:28,926 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:37:28] "[33mGET /api/wallet/0x0000000000000000000000000000000000000000 HTTP/1.1[0m" 404 -
+2025-10-05 13:38:14,852 - utils - INFO - Retrieved wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:14,852 - __main__ - INFO - Imported existing wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:14,854 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:38:14] "POST /api/wallet/import HTTP/1.1" 200 -
+2025-10-05 13:38:15,312 - utils - INFO - Retrieved wallet: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:15,312 - __main__ - INFO - Retrieved wallet info: 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:15,312 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:38:15] "GET /api/wallet/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -
+2025-10-05 13:38:15,616 - utils - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:15,616 - __main__ - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:15,616 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:38:15] "GET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -
+2025-10-05 13:38:22,895 - utils - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:22,895 - __main__ - INFO - Retrieved 1 transactions for 0xdFAA3443a966c734034E14bF2D3ef0e549b469dF
+2025-10-05 13:38:22,895 - werkzeug - INFO - 127.0.0.1 - - [05/Oct/2025 13:38:22] "GET /api/transactions/0xdFAA3443a966c734034E14bF2D3ef0e549b469dF HTTP/1.1" 200 -

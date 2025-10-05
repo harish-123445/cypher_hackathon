@@ -1,0 +1,13 @@
+{
+    "skip_url": "https://api.skip.build/v2/fungible/msgs_direct",
+    "pending_tx_expiry": 30,
+    "slippage_tolerance": 1,
+    "starting_balance_min": 1.0,
+    "starting_balance_max": 10.0,
+    "eth_chain_id": "1",
+    "usdc_contract": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "wallets_collection": "wallets",
+    "transactions_collection": "transactions",
+    "max_transfer_amount": 1000.0,
+    "min_transfer_amount": 0.0001
+}
